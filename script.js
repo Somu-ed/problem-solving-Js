@@ -35,7 +35,18 @@ function badOrGoodMovie(rating) {
     }
 }
 
-console.log(badOrGoodMovie(6));
-console.log(badOrGoodMovie(7));
-console.log(badOrGoodMovie(9.2));
-console.log(badOrGoodMovie(2));
+// console.log(badOrGoodMovie(6));
+// console.log(badOrGoodMovie(7));
+// console.log(badOrGoodMovie(9.2));
+// console.log(badOrGoodMovie(2));
+
+function isEmptyString(string) {
+    if (string == "") {
+        return "true";
+    } else {
+        return "false"
+    }
+}
+
+console.log(isEmptyString("hello"));
+console.log(isEmptyString(""));
