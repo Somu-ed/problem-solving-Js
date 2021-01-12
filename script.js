@@ -25,4 +25,17 @@ function getFirstItem(items) {
 }
 
 let item = ["banana", "godfather", "shawshank", "pickle"];
-console.log(getFirstItem(item));
+// console.log(getFirstItem(item));
+
+function badOrGoodMovie(rating) {
+    if (rating <= 6) {
+        return "Bad Movie";
+    } else if (rating <= 10) {
+        return "Good Movie";
+    }
+}
+
+console.log(badOrGoodMovie(6));
+console.log(badOrGoodMovie(7));
+console.log(badOrGoodMovie(9.2));
+console.log(badOrGoodMovie(2));
