@@ -18,4 +18,11 @@ function yourAgeInSeconds(age) {
     return age*12*30*24*60*60;
 }
 
-console.log(yourAgeInSeconds(25));
+// console.log(yourAgeInSeconds(25));
+
+function getFirstItem(items) {
+    return items[0];
+}
+
+let item = ["banana", "godfather", "shawshank", "pickle"];
+console.log(getFirstItem(item));
