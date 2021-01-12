@@ -48,5 +48,29 @@ function isEmptyString(string) {
     }
 }
 
-console.log(isEmptyString("hello"));
-console.log(isEmptyString(""));
+// console.log(isEmptyString("hello"));
+// console.log(isEmptyString(""));
+
+function findMin(array) {
+    let min = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] < min) {
+            min = array[i];
+        }
+    }
+    return min;
+}
+
+function findMax(array) {
+    let max = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+    }
+    return max;
+}
+
+let numbers = [5, 2, 9, 8, 7, 3];
+console.log(findMax(numbers));
+console.log(findMin(numbers));
